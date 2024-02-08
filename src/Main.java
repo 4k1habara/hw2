@@ -39,5 +39,12 @@ public class Main {
         var weightDifference = boxer2 - boxer1;
         System.out.println(weightDifference);
         var remainder = boxer2 % boxer1;
+        var totalTime = 640;
+        var timeOfOneWorker = 8;
+        var totalWorkers = totalTime / timeOfOneWorker;
+        System.out.println("Всего работников в компании — " + totalWorkers + " человек");
+        totalWorkers = totalWorkers + 94;
+        totalTime = totalWorkers * timeOfOneWorker;
+        System.out.println("Если в компании работает " + totalWorkers + " человек, то всего " + totalTime + " часов работы может быть поделено между сотрудниками");
     }
 }
